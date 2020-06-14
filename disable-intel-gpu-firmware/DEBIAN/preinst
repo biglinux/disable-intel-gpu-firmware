@@ -1,0 +1,276 @@
+#!/bin/sh
+set -e
+package_name=disable-intel-gpu-firmware
+mkdir -p "/usr/share/dpkgdivert/disable-intel-gpu-firmware"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_dmc_ver1_07.bin" --rename "/lib/firmware/i915/bxt_dmc_ver1_07.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_32.0.3.bin" --rename "/lib/firmware/i915/bxt_guc_32.0.3.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_33.0.0.bin" --rename "/lib/firmware/i915/bxt_guc_33.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_ver8_7.bin" --rename "/lib/firmware/i915/bxt_guc_ver8_7.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_ver9_29.bin" --rename "/lib/firmware/i915/bxt_guc_ver9_29.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_huc_2.0.0.bin" --rename "/lib/firmware/i915/bxt_huc_2.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_huc_ver01_07_1398.bin" --rename "/lib/firmware/i915/bxt_huc_ver01_07_1398.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_huc_ver01_8_2893.bin" --rename "/lib/firmware/i915/bxt_huc_ver01_8_2893.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cml_guc_33.0.0.bin" --rename "/lib/firmware/i915/cml_guc_33.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cml_huc_4.0.0.bin" --rename "/lib/firmware/i915/cml_huc_4.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cnl_dmc_ver1_06.bin" --rename "/lib/firmware/i915/cnl_dmc_ver1_06.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cnl_dmc_ver1_07.bin" --rename "/lib/firmware/i915/cnl_dmc_ver1_07.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915ehl_guc_33.0.4.bin" --rename "/lib/firmware/i915/ehl_guc_33.0.4.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915ehl_huc_9.0.0.bin" --rename "/lib/firmware/i915/ehl_huc_9.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_dmc_ver1_04.bin" --rename "/lib/firmware/i915/glk_dmc_ver1_04.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_guc_32.0.3.bin" --rename "/lib/firmware/i915/glk_guc_32.0.3.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_guc_33.0.0.bin" --rename "/lib/firmware/i915/glk_guc_33.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_huc_4.0.0.bin" --rename "/lib/firmware/i915/glk_huc_4.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_huc_ver03_01_2893.bin" --rename "/lib/firmware/i915/glk_huc_ver03_01_2893.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_dmc_ver1_07.bin" --rename "/lib/firmware/i915/icl_dmc_ver1_07.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_dmc_ver1_09.bin" --rename "/lib/firmware/i915/icl_dmc_ver1_09.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_guc_32.0.3.bin" --rename "/lib/firmware/i915/icl_guc_32.0.3.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_guc_33.0.0.bin" --rename "/lib/firmware/i915/icl_guc_33.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_huc_9.0.0.bin" --rename "/lib/firmware/i915/icl_huc_9.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_huc_ver8_4_3238.bin" --rename "/lib/firmware/i915/icl_huc_ver8_4_3238.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_dmc_ver1_01.bin" --rename "/lib/firmware/i915/kbl_dmc_ver1_01.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_dmc_ver1_04.bin" --rename "/lib/firmware/i915/kbl_dmc_ver1_04.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_32.0.3.bin" --rename "/lib/firmware/i915/kbl_guc_32.0.3.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_33.0.0.bin" --rename "/lib/firmware/i915/kbl_guc_33.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_ver9_14.bin" --rename "/lib/firmware/i915/kbl_guc_ver9_14.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_ver9_39.bin" --rename "/lib/firmware/i915/kbl_guc_ver9_39.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_huc_4.0.0.bin" --rename "/lib/firmware/i915/kbl_huc_4.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_huc_ver02_00_1810.bin" --rename "/lib/firmware/i915/kbl_huc_ver02_00_1810.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1_23.bin" --rename "/lib/firmware/i915/skl_dmc_ver1_23.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1_26.bin" --rename "/lib/firmware/i915/skl_dmc_ver1_26.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1_27.bin" --rename "/lib/firmware/i915/skl_dmc_ver1_27.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_32.0.3.bin" --rename "/lib/firmware/i915/skl_guc_32.0.3.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_33.0.0.bin" --rename "/lib/firmware/i915/skl_guc_33.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver1.bin" --rename "/lib/firmware/i915/skl_guc_ver1.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver4.bin" --rename "/lib/firmware/i915/skl_guc_ver4.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver6_1.bin" --rename "/lib/firmware/i915/skl_guc_ver6_1.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver9_33.bin" --rename "/lib/firmware/i915/skl_guc_ver9_33.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_huc_2.0.0.bin" --rename "/lib/firmware/i915/skl_huc_2.0.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_huc_ver01_07_1398.bin" --rename "/lib/firmware/i915/skl_huc_ver01_07_1398.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_dmc_ver2_04.bin" --rename "/lib/firmware/i915/tgl_dmc_ver2_04.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_dmc_ver2_06.bin" --rename "/lib/firmware/i915/tgl_dmc_ver2_06.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_guc_35.2.0.bin" --rename "/lib/firmware/i915/tgl_guc_35.2.0.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_huc_7.0.12.bin" --rename "/lib/firmware/i915/tgl_huc_7.0.12.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_huc_7.0.3.bin" --rename "/lib/firmware/i915/tgl_huc_7.0.3.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_dmc_ver1.bin" --rename "/lib/firmware/i915/bxt_dmc_ver1.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_dmc_ver1.bin" --rename "/lib/firmware/i915/kbl_dmc_ver1.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1.bin" --rename "/lib/firmware/i915/skl_dmc_ver1.bin"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver6.bin" --rename "/lib/firmware/i915/skl_guc_ver6.bin"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_dmc_ver1_07.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_dmc_ver1_07.bin" --rename "/lib/firmware/i915/bxt_dmc_ver1_07.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_guc_32.0.3.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_32.0.3.bin" --rename "/lib/firmware/i915/bxt_guc_32.0.3.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_guc_33.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_33.0.0.bin" --rename "/lib/firmware/i915/bxt_guc_33.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_guc_ver8_7.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_ver8_7.bin" --rename "/lib/firmware/i915/bxt_guc_ver8_7.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_guc_ver9_29.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_guc_ver9_29.bin" --rename "/lib/firmware/i915/bxt_guc_ver9_29.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_huc_2.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_huc_2.0.0.bin" --rename "/lib/firmware/i915/bxt_huc_2.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_huc_ver01_07_1398.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_huc_ver01_07_1398.bin" --rename "/lib/firmware/i915/bxt_huc_ver01_07_1398.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_huc_ver01_8_2893.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_huc_ver01_8_2893.bin" --rename "/lib/firmware/i915/bxt_huc_ver01_8_2893.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/cml_guc_33.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cml_guc_33.0.0.bin" --rename "/lib/firmware/i915/cml_guc_33.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/cml_huc_4.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cml_huc_4.0.0.bin" --rename "/lib/firmware/i915/cml_huc_4.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/cnl_dmc_ver1_06.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cnl_dmc_ver1_06.bin" --rename "/lib/firmware/i915/cnl_dmc_ver1_06.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/cnl_dmc_ver1_07.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915cnl_dmc_ver1_07.bin" --rename "/lib/firmware/i915/cnl_dmc_ver1_07.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/ehl_guc_33.0.4.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915ehl_guc_33.0.4.bin" --rename "/lib/firmware/i915/ehl_guc_33.0.4.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/ehl_huc_9.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915ehl_huc_9.0.0.bin" --rename "/lib/firmware/i915/ehl_huc_9.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/glk_dmc_ver1_04.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_dmc_ver1_04.bin" --rename "/lib/firmware/i915/glk_dmc_ver1_04.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/glk_guc_32.0.3.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_guc_32.0.3.bin" --rename "/lib/firmware/i915/glk_guc_32.0.3.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/glk_guc_33.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_guc_33.0.0.bin" --rename "/lib/firmware/i915/glk_guc_33.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/glk_huc_4.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_huc_4.0.0.bin" --rename "/lib/firmware/i915/glk_huc_4.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/glk_huc_ver03_01_2893.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915glk_huc_ver03_01_2893.bin" --rename "/lib/firmware/i915/glk_huc_ver03_01_2893.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/icl_dmc_ver1_07.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_dmc_ver1_07.bin" --rename "/lib/firmware/i915/icl_dmc_ver1_07.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/icl_dmc_ver1_09.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_dmc_ver1_09.bin" --rename "/lib/firmware/i915/icl_dmc_ver1_09.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/icl_guc_32.0.3.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_guc_32.0.3.bin" --rename "/lib/firmware/i915/icl_guc_32.0.3.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/icl_guc_33.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_guc_33.0.0.bin" --rename "/lib/firmware/i915/icl_guc_33.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/icl_huc_9.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_huc_9.0.0.bin" --rename "/lib/firmware/i915/icl_huc_9.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/icl_huc_ver8_4_3238.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915icl_huc_ver8_4_3238.bin" --rename "/lib/firmware/i915/icl_huc_ver8_4_3238.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_dmc_ver1_01.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_dmc_ver1_01.bin" --rename "/lib/firmware/i915/kbl_dmc_ver1_01.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_dmc_ver1_04.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_dmc_ver1_04.bin" --rename "/lib/firmware/i915/kbl_dmc_ver1_04.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_guc_32.0.3.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_32.0.3.bin" --rename "/lib/firmware/i915/kbl_guc_32.0.3.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_guc_33.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_33.0.0.bin" --rename "/lib/firmware/i915/kbl_guc_33.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_guc_ver9_14.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_ver9_14.bin" --rename "/lib/firmware/i915/kbl_guc_ver9_14.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_guc_ver9_39.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_guc_ver9_39.bin" --rename "/lib/firmware/i915/kbl_guc_ver9_39.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_huc_4.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_huc_4.0.0.bin" --rename "/lib/firmware/i915/kbl_huc_4.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_huc_ver02_00_1810.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_huc_ver02_00_1810.bin" --rename "/lib/firmware/i915/kbl_huc_ver02_00_1810.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_dmc_ver1_23.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1_23.bin" --rename "/lib/firmware/i915/skl_dmc_ver1_23.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_dmc_ver1_26.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1_26.bin" --rename "/lib/firmware/i915/skl_dmc_ver1_26.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_dmc_ver1_27.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1_27.bin" --rename "/lib/firmware/i915/skl_dmc_ver1_27.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_32.0.3.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_32.0.3.bin" --rename "/lib/firmware/i915/skl_guc_32.0.3.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_33.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_33.0.0.bin" --rename "/lib/firmware/i915/skl_guc_33.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_ver1.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver1.bin" --rename "/lib/firmware/i915/skl_guc_ver1.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_ver4.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver4.bin" --rename "/lib/firmware/i915/skl_guc_ver4.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_ver6_1.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver6_1.bin" --rename "/lib/firmware/i915/skl_guc_ver6_1.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_ver9_33.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver9_33.bin" --rename "/lib/firmware/i915/skl_guc_ver9_33.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_huc_2.0.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_huc_2.0.0.bin" --rename "/lib/firmware/i915/skl_huc_2.0.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_huc_ver01_07_1398.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_huc_ver01_07_1398.bin" --rename "/lib/firmware/i915/skl_huc_ver01_07_1398.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/tgl_dmc_ver2_04.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_dmc_ver2_04.bin" --rename "/lib/firmware/i915/tgl_dmc_ver2_04.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/tgl_dmc_ver2_06.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_dmc_ver2_06.bin" --rename "/lib/firmware/i915/tgl_dmc_ver2_06.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/tgl_guc_35.2.0.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_guc_35.2.0.bin" --rename "/lib/firmware/i915/tgl_guc_35.2.0.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/tgl_huc_7.0.12.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_huc_7.0.12.bin" --rename "/lib/firmware/i915/tgl_huc_7.0.12.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/tgl_huc_7.0.3.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915tgl_huc_7.0.3.bin" --rename "/lib/firmware/i915/tgl_huc_7.0.3.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/bxt_dmc_ver1.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915bxt_dmc_ver1.bin" --rename "/lib/firmware/i915/bxt_dmc_ver1.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/kbl_dmc_ver1.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915kbl_dmc_ver1.bin" --rename "/lib/firmware/i915/kbl_dmc_ver1.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_dmc_ver1.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_dmc_ver1.bin" --rename "/lib/firmware/i915/skl_dmc_ver1.bin"
+fi
+if [ "$(dpkg-divert --list "/lib/firmware/i915/skl_guc_ver6.bin")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/disable-intel-gpu-firmware/libfirmwarei915skl_guc_ver6.bin" --rename "/lib/firmware/i915/skl_guc_ver6.bin"
+fi
+;;
+esac
+exit 0

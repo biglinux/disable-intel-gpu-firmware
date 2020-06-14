@@ -1,0 +1,5 @@
+74ecd4ee81cedc1976cdd44cc7dbab7b  DEBIAN/dpkg-divert
+e32a2f904fac2c93f40bddf78f2d637a  DEBIAN/preinst
+ee2990bc08c0d5846f2e15daae3f32ab  DEBIAN/postrm
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+010239cacff7e2f4c83a39d459b1ed0d  DEBIAN/control

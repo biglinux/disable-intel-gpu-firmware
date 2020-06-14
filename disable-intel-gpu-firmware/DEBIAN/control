@@ -1,0 +1,11 @@
+Package: disable-intel-gpu-firmware
+Version: 1.0.0-1big1
+Depends: linux-firmware
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:48
+Description: Disable firmware for intel gpu, to fix some hangs in system, but make higher energy consumption
+
+
